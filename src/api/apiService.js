@@ -32,7 +32,7 @@ export const taskApiService = {
             'Authorization' : `Bearer ${token}`,
             'Content-Type':'application/json'
         },
-        body: JSON.stringify(data)
+        body: JSON.stringify(data)// Datos de la tarea
     }).then(res => res.json()),
 
     update: (token, id, data) => fetch(`${BASE_URL}/tareas/${id}/`, {
