@@ -10,7 +10,7 @@ import TaskScreen from './src/screens/TaskScreen';
 import ProfileImageScreen from './src/screens/ProfileImageScreen';
 
 const Stack = createStackNavigator();
-
+// Componente que controla la navegación principal
 const RootNavigation = () => {
     const { isLoading, userToken } = useContext(AuthContext);
 
