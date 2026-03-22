@@ -10,7 +10,7 @@ export const loginService = async (email, password) => {
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({email, password}),
         });
-
+        // Convierte la respuesta a JSON
         const data = await response.json();
         if(!response.ok) throw new Error(data.error || 'Error al iniciar sesión');
         return data;
