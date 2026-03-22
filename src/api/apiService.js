@@ -2,7 +2,7 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 
 // 1. CAMBIA ESTA IP SIEMPRE QUE CAMBIES DE RED O REINICIES LA PC
 const BASE_URL = "http://192.168.20.25:8000/api"; 
-
+// Servicio para iniciar sesión
 export const loginService = async (email, password) => {
     try {
         const response = await fetch(`${BASE_URL}/auth/login/`, { // Asegúrate que en Django esta ruta exista para Firebase
