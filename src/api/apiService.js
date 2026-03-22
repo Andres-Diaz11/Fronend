@@ -20,6 +20,7 @@ export const loginService = async (email, password) => {
 };
 
 export const taskApiService = {
+     // Obtener todas las tareas
     getAll: (token) => fetch(`${BASE_URL}/tareas/`, {
         headers: { 'Authorization' : `Bearer ${token}` }
     }).then(res => res.json()),
