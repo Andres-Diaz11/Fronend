@@ -80,6 +80,7 @@ export const uploadProfileImageService = async (token, imageUri) => {
         });
 
         const result = await response.json();
+        // Manejo de errores
         if (!response.ok) throw new Error(result.error || 'Error al subir la imagen');
         return result;
     } catch (error) {
