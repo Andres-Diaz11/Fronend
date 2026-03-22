@@ -5,6 +5,7 @@ const BASE_URL = "http://192.168.20.25:8000/api";
 // Servicio para iniciar sesión
 export const loginService = async (email, password) => {
     try {
+        // Hace una petición POST al endpoint de login
         const response = await fetch(`${BASE_URL}/auth/login/`, { // Asegúrate que en Django esta ruta exista para Firebase
             method: "POST",
             headers: {'Content-Type': 'application/json'},
