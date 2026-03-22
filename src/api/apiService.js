@@ -25,7 +25,7 @@ export const taskApiService = {
     getAll: (token) => fetch(`${BASE_URL}/tareas/`, {
         headers: { 'Authorization' : `Bearer ${token}` }
     }).then(res => res.json()),
-
+    // Crear una nueva tarea
     create: (token, data) => fetch(`${BASE_URL}/tareas/`, {
         method: 'POST',
         headers: {
